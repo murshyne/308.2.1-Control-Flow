@@ -48,3 +48,18 @@ const weeks = 3;
 managePlantGrowth(weeks);
 
 
+// Initial conditions
+const initialPlantCount = 100;
+const weeks = 10;
+
+// Calculate plant count after 10 weeks
+const plantCountAfter10Weeks = calculatePlantCount(initialPlantCount, weeks);
+console.log("Number of plants after 10 weeks:", plantCountAfter10Weeks);
+
+// Calculate total space required
+const totalSpaceRequired = plantCountAfter10Weeks * plantSpace;
+console.log("Total space required (in square meters):", totalSpaceRequired);
+
+// Calculate the new radius of the garden
+const newRadius = Math.sqrt(totalSpaceRequired / PI);
+console.log("New radius of the expanded garden (in meters):", newRadius);
